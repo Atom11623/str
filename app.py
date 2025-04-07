@@ -7,6 +7,7 @@ import joblib
 # Load the saved model and scaler
 model = joblib.load("rf_model_compressed.pkl")
 scaler = joblib.load("scaler.pkl")
+model_features = joblib.load("model_features.pkl")
 
 st.set_page_config(page_title="California House Price Predictor", layout="centered")
 st.title("🏠 California House Price Predictor")
